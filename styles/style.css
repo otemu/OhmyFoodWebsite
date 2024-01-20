@@ -1,7 +1,6 @@
 @media (min-width: 375px) {
   body {
-    background: var(--White, #FFF);
-    float: left;
+    background-color: #F6F6F6;
     width: 60%;
   }
 }
@@ -22,6 +21,7 @@ h1 {
   align-items: center;
   flex-grow: 1;
   /* Shadow/Badge */
+  background-color: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
   gap: -10px;
@@ -59,4 +59,53 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+/* 2nd section of first page */
+.book {
+  color: #000;
+  text-align: center;
+  /* Section Title */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.discover {
+  color: var(--Grey, #353535);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+button {
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  /* Shadow/Button */
+}
+
+div > button > h2 {
+  color: var(--White, #FFF);
+  text-align: center;
+  /* Button */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  width: 180.495px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */
