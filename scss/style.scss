@@ -1,31 +1,38 @@
 
 @media (min-width:375px){
-    body{background: var(--Background, #F6F6F6);
+    body{background: var(--White, #FFF);
     float: left;
-width: 60%;}
+width: 60%;
+
+;
+
+;}
     
 
 }
 
+h2,h3,h4,h5,p{
+    font-family: 'Roboto', sans-serif;
+}
 
+// header f wesite
 h1{font-family: 'Shrikhand', serif;}
 
 .title{
     display: flex;
 width: 375px;
-height: 63px;
+height: 70px;
 padding: 14px 89px 13px 89px;
 justify-content: center;
 align-items: center;
-flex-shrink: 0;
-background: var(--White, #FFF);
-
+flex-grow: 1;
 /* Shadow/Badge */
 box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+width:100%;
+gap:-10px;
+
 
 }
-
-
 .titles{
     display: flex;
 width: 197px;
@@ -33,5 +40,30 @@ height: 36px;
 padding: 0px 19px 0px 16px;
 justify-content: center;
 align-items: center;
-flex-shrink: 0;
+flex-grow: 1;
+padding-left: px;
+}
+
+.location{
+    display: flex;
+width: 375px;
+height: 50px;
+justify-content: center;
+align-items: center;
+gap: 0px;
+flex-grow: 1;
+padding: 13px 89px 13px 89px;
+background: var(--Grey-2, #EAEAEA);
+margin-top: 1px;
+width: 100%;
+}
+
+#london{
+    color: var(--Grey, #353535);
+/* Button */
+font-family: Roboto;
+
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
