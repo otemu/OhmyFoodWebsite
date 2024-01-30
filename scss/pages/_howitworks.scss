@@ -16,6 +16,8 @@
     height: 24px;
     flex-shrink: 0;
     margin-left: 20px;
+    align-content: center;
+    justify-content: center;
   }
 }
 
@@ -74,5 +76,21 @@
     margin: 28px 28px 33.47px;
     display: flex;
     align-items: center;
+  }
+}
+
+.circle {
+  background-color: $primary;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+  p {
+    text-align: center;
+    color: white;
   }
 }
