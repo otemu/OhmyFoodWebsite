@@ -475,14 +475,20 @@ header {
   margin-top: 54px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
 .cards {
   width: 346px;
   height: 251px;
   flex-shrink: 0;
-  padding-bottom: 88px;
   border-radius: 15px;
   background: #fff;
-  padding-bottom: 77px;
   margin: 0px 0px 0px 17px;
 }
 .cards h3 {
@@ -490,8 +496,8 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 16px;
   margin-left: 13px;
+  margin-top: 0;
 }
 .cards p {
   color: #000;
@@ -501,14 +507,14 @@ header {
   font-weight: 300;
   line-height: normal;
   margin-left: 13px;
-  margin-top: 21px;
 }
 
 img {
   width: 346px;
-  height: 171px;
+  height: 231px;
   flex-shrink: 0;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
+  padding-bottom: 77px;
 }/*# sourceMappingURL=style.css.map */
