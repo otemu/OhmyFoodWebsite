@@ -1,0 +1,25 @@
+.rest {
+  background-color: $primarybackground;
+}
+
+.cards {
+  width: 340px;
+  height: 251px;
+  flex-shrink: 0;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  border-radius: 15px;
+  background: #fff;
+  padding-bottom: 77px;
+  // /* Shadow/Card */
+  margin: 0px 0px 0px 17px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-top: 54px;
+}

@@ -1,0 +1,22 @@
+.btn {
+  margin: 0;
+  padding: 10px;
+  border-radius: 25px;
+
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  // font
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  font-family: Roboto;
+  width: 218px;
+  height: 50px;
+  flex-shrink: 0;
+}
