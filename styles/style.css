@@ -327,8 +327,13 @@ p {
 }
 
 .container {
-  max-width: 1055px;
+  max-width: 760px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1055px;
+  }
 }
 
 header {
@@ -368,6 +373,7 @@ footer p {
   font-weight: 500;
   line-height: normal;
   color: white;
+  position: relative;
 }
 footer .p {
   font-weight: 400;
@@ -376,6 +382,7 @@ footer .p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: relative;
 }
 
 .btn {
@@ -427,9 +434,22 @@ footer .p {
   margin-bottom: 29px;
 }
 
+.menu-page .image {
+  width: 100%;
+  height: 275px;
+  display: block;
+  object-fit: cover;
+}
 .menu-page .btn {
   padding-right: 20px;
   padding-left: 20px;
+}
+.menu-page .content {
+  position: relative;
+  border-radius: 40px 40px 0px 0px;
+  background-color: aqua;
+  padding: 20px;
+  margin-top: -100px;
 }
 
 .howitworks {
@@ -513,6 +533,8 @@ footer .p {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  position: relative;
+  left: -15px;
 }
 .circle p {
   text-align: center;
@@ -540,6 +562,7 @@ footer .p {
   width: 346px;
   height: 251px;
   flex-shrink: 0;
+  position: relative;
   border-radius: 15px;
   background: #fff;
 }
@@ -569,4 +592,11 @@ footer .p {
   object-fit: cover;
   display: flex;
   align-content: center;
+}
+
+.fa-heart {
+  margin-right: 60%;
+  color: brown;
+  display: inline-flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */

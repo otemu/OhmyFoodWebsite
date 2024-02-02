@@ -18,6 +18,9 @@ p {
 }
 
 .container {
-  max-width: 1055px;
+  max-width: 760px;
   margin: 0 auto;
+  @include desktop-only {
+    max-width: 1055px;
+  }
 }

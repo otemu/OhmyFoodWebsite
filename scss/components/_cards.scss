@@ -21,7 +21,7 @@
   width: 346px;
   height: 251px;
   flex-shrink: 0;
-
+  position: relative;
   border-radius: 15px;
   background: #fff;
 
@@ -55,4 +55,10 @@
     display: flex;
     align-content: center;
   }
+}
+.fa-heart {
+  margin-right: 60%;
+  color: brown;
+  display: inline-flex;
+  flex-direction: row;
 }
