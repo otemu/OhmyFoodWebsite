@@ -1,18 +1,18 @@
 //base styles
-@import "./base/variables";
-@import "./base/mixin";
-@import "./base/reset";
-@import "./base/default";
+@import './base/variables';
+@import './base/mixin';
+@import './base/reset';
+@import './base/default';
 //layout
-@import "./layout/header";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/footer';
 //components
-@import "./components/buttons";
+@import './components/buttons';
 // pages
-@import "./pages/home";
-@import "./pages/menu";
-@import "./pages/howitworks";
-@import "./components/cards";
+@import './pages/home';
+@import './pages/menu';
+@import './pages/howitworks';
+@import './components/cards';
 
 // @media screen and (min-width:375px){
 //     body{background-color: $primarybackground;

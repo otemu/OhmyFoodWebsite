@@ -152,7 +152,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -161,7 +162,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -169,9 +171,9 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -179,9 +181,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -190,9 +192,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -236,8 +238,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -245,8 +247,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -254,7 +256,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -262,7 +264,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -323,7 +325,7 @@ h3,
 h4,
 h5,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -342,7 +344,7 @@ header {
 }
 
 .logo {
-  font-family: "Shrikhand", serif;
+  font-family: 'Shrikhand', serif;
   font-size: 28px;
   margin: 0;
   padding: 15px;
@@ -351,10 +353,17 @@ header {
 footer {
   background-color: #353535;
   display: flex;
-  width: 375px;
+  width: 100%;
   padding: 22px 25px;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 40px;
+  }
 }
 footer h4 {
   color: #fff;
@@ -389,7 +398,10 @@ footer .p {
   margin: 0;
   padding: 10px;
   border-radius: 25px;
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
   /* Shadow/Button */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
@@ -421,7 +433,7 @@ footer .p {
   color: #353535;
 }
 .home-page .book-meal {
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 20px;
   text-align: center;
 }
@@ -455,16 +467,26 @@ footer .p {
 .howitworks {
   flex-shrink: 0;
   background-color: #fff;
-  gap: 25px;
-  display: flex;
-  flex-direction: column;
   margin-top: 48px;
+  padding-left: 24px;
 }
 .howitworks .hiw_title {
   margin-left: 20px;
 }
+.howitworks .hiw_items {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .howitworks .hiw_items {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+  }
+}
 .howitworks .fa-circle {
-  color: #9356DC;
+  color: #9356dc;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -474,15 +496,20 @@ footer .p {
 }
 
 .hiw_box {
-  width: 322.486px;
+  width: 100%;
   height: 72.379px;
   flex-shrink: 0;
   border-radius: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   align-content: center;
-  margin-left: 32.51px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .hiw_box {
+    flex-flow: row wrap;
+    width: calc(33.3333333333% - 24px);
+  }
 }
 .hiw_box_text {
   color: #000;
@@ -514,7 +541,7 @@ footer .p {
   align-items: center;
 }
 .hiw_box_store {
-  color: #9356DC;
+  color: #9356dc;
   width: 16px;
   height: 15.922px;
   flex-shrink: 0;
@@ -525,7 +552,7 @@ footer .p {
 }
 
 .circle {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 100%;
   height: 24px;
   width: 24px;
@@ -542,7 +569,7 @@ footer .p {
 }
 
 .rest {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-bottom: 66px;
 }
 .rest h2 {
@@ -557,14 +584,23 @@ footer .p {
   flex-shrink: 0;
   margin-left: 20px;
 }
+@media (min-width: 1024px) {
+  .card {
+    flex-flow: row wrap;
+  }
+}
 
 .cards {
-  width: 346px;
-  height: 251px;
+  width: 100%;
   flex-shrink: 0;
   position: relative;
   border-radius: 15px;
   background: #fff;
+}
+@media (min-width: 1024px) {
+  .cards {
+    width: calc(50% - 18px);
+  }
 }
 .cards h3 {
   font-size: 18px;
@@ -599,4 +635,4 @@ footer .p {
   color: brown;
   display: inline-flex;
   flex-direction: row;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

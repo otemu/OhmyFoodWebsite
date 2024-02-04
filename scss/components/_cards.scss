@@ -15,15 +15,20 @@
 
   flex-shrink: 0;
   margin-left: 20px;
+  @include desktop-only {
+    flex-flow: row wrap;
+  }
 }
 
 .cards {
-  width: 346px;
-  height: 251px;
+  width: 100%;
   flex-shrink: 0;
   position: relative;
   border-radius: 15px;
   background: #fff;
+  @include desktop-only {
+    width: calc(100% / 2 - 18px);
+  }
 
   // /* Shadow/Card */
 
